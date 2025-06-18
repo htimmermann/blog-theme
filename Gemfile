@@ -9,17 +9,20 @@ source "https://rubygems.org"
 # Happy Jekylling!
 #gem "jekyll", "~> 4.0.0"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
+gem "jekyll", "~> 4.3"
 gem "minima", "~> 2.5"
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
-# If you have any plugins, put them here!
-group :jekyll_plugins do
-	gem "jekyll-scholar"
-	gem "jekyll-sitemap"
-	gem "jekyll-feed"
-	gem "jekyll-katex"
-end
+
+# Fix for missing stdlibs in Ruby 3.4+
+gem 'csv'
+gem 'logger'
+gem 'bigdecimal'
+
+# Plugins
+gem 'bibtex-ruby', '>= 6.0.0'
+gem "jekyll-scholar", "~> 7.2"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jekyll-katex"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
