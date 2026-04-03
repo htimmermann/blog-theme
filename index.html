@@ -1,67 +1,19 @@
 ---
-title: blog
+layout: landing
+title: Henry Fortes Timmermann
 ---
 
-<html>
-<head>
-    <title>Henry Fortes Timmermann</title>
-    <meta charset='UTF-8'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'/>
-
-    <meta name='description' content='Henry Fortes Timmermann is an Undergraduate at the University of Chicago.'>
-    <!-- A decent browser will parse this fine:
-         https://webmasters.stackexchange.com/questions/92744. -->
-    <meta name='keywords' content='
-        machine learning,
-        statistical machine learning,
-        statistics,
-        computational statistics,
-        linear algebra,
-        numerical linear algebra,
-        statistical software,
-        deep learning,
-        computer science,
-        econometrics,
-        econometrics methods,
-        economics,
-        venture capital
-    '>
-    <meta name='author' content='Henry Fortes Timmermann'>
-
-    <link rel='shortcut icon' href='/favicon.png?v=e' />
-    <link href='/css/blog.css' rel='stylesheet'/>
-
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
-    {% include nav.html %}
-    <div id='blog' class='wrap'>
-        <div id='intro'>
-            <div class='quote'>
-                <p>The man who doesn't read has no advantage over the man who cannot read.</p>
-                <a>Mark Twain</a>
-            </div>
-        </div>
-        <div id='posts' class='section'>
-            {% for post in site.posts %}
-                <div class='post-row'>
-                    <p class='post-title'>
-                        <a href="{{ post.url }}">
-                            <span class="katex">{{ post.title }}</span>
-                        </a>
-                    </p>
-                    <p class='post-date'>
-                        {{ post.date | date_to_long_string }}
-                    </p>
-                </div>
-                <p class='post-subtitle'>
-                    {% katexmm %}
-                    {{ post.subtitle }}
-                    {% endkatexmm %}
-                </p>
-                <span class='hidden'>{{ forloop.index }}</span>
-            {% endfor %}
-        </div>
-    </div>
-</body>
-</html>
+<div id='landing'>
+	<h1>Henry Fortes Timmermann</h1>
+	<ul id='links'>
+		<li>
+			<a href='/blog'>Blog</a>
+		</li>
+		<li>
+			<a href='https://github.com/htimmermann' target='_blank'>Code</a>
+		</li>
+		<li id='contact'>
+			htimmermann [at] uchicago [dot] edu
+		</li>
+	</ul>
+</div>

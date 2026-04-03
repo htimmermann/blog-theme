@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle:*)",
+      "Bash(pkill -f \"jekyll serve\")",
+      "Bash(curl -s http://localhost:4000/)",
+      "Bash(curl -s http://localhost:4000/blog)",
+      "Bash(curl -s http://localhost:4000/blog/)",
+      "WebFetch(domain:github.com)",
+      "Bash(curl:*)",
+      "WebFetch(domain:gregorygundersen.com)"
+    ]
+  }
+}

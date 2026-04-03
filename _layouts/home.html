@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='Henry Fortes Timmermann'>
+    <meta name='keywords' content='{{ page.keywords }}'>
+    <meta name='author' content='Henry Fortes Timmermann'>
+
+    <link href='/css/blog.css' rel='stylesheet'/>
+
+    {% include mathjax.html %}
+</head>
+<body>
+<div class='content'>
+    <div class='wrap article'>
+        {{ content }}
+    </div>
+</div>
+</body>
+</html>

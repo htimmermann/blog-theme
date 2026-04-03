@@ -39,6 +39,12 @@ h1 {
   max-width: 700px;
   margin: 0 auto;
 }
+.wrap > p {
+  margin: 0;
+}
+.email {
+  font-family: monospace;
+}
 .mono {
   font-family: monospace;
 }

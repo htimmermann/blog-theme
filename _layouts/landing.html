@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Henry Fortes Timmermann</title>
+	<title>{{ page.title }}</title>
 	<meta charset='UTF-8'>
 	<meta content='width=device-width, initial-scale=1' name='viewport'/>
 
 	<meta name='description' content='Henry Fortes Timmermann'>
-	<meta name='keywords' content=''>
+	<meta name='keywords' content='{{ page.keywords }}'>
 	<meta name='author' content='Henry Fortes Timmermann'>
 
 	<link rel='stylesheet' type='text/css' href='/css/main.css'/>
 	<link rel='shortcut icon' href='/favicon.png?v=e' />
 </head>
 <body>
-	<div id='landing'>
-	<h1>Henry Fortes Timmermann</h1>
-	<ul id='links'>
-		<li>
-			<a href='/blog'>Blog</a>
-		</li>
-		<li>
-			<a href='https://github.com/htimmermann' target='_blank'>Code</a>
-		</li>
-		<li id='contact'>
-			htimmermann [at] uchicago [dot] edu
-		</li>
-	</ul>
-</div>
-
+	{{ content }}
 </body>
 </html>

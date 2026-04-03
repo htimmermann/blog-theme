@@ -1,0 +1,33 @@
+---
+title: blog
+layout: default
+---
+
+<div id='blog' class='wrap'>
+    <div id='intro'>
+        <div class='quote'>
+            <p>The man who doesn't read has no advantage over the man who cannot read.</p>
+            <a>Mark Twain</a>
+        </div>
+    </div>
+    <div id='posts' class='section'>
+        {% for post in site.posts %}
+            <div class='post-row'>
+                <p class='post-title'>
+                    <a href="{{ post.url }}">
+                        <span class="katex">{{ post.title }}</span>
+                    </a>
+                </p>
+                <p class='post-date'>
+                    {{ post.date | date_to_long_string }}
+                </p>
+            </div>
+            <p class='post-subtitle'>
+                {% katexmm %}
+                {{ post.subtitle }}
+                {% endkatexmm %}
+            </p>
+            <span class='hidden'>{{ forloop.index }}</span>
+        {% endfor %}
+    </div>
+</div>
