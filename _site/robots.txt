@@ -1,1 +1,0 @@
-Sitemap: https://htimmermann.github.io/blog-theme/sitemap.xml
