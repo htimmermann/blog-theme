@@ -14,7 +14,7 @@ layout: default
         {% for post in site.posts %}
             <div class='post-row'>
                 <p class='post-title'>
-                    <a href="{{ post.url }}">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
                         <span class="katex">{{ post.title }}</span>
                     </a>
                 </p>
