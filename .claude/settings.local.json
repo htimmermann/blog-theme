@@ -9,7 +9,16 @@
       "WebFetch(domain:github.com)",
       "Bash(curl:*)",
       "WebFetch(domain:gregorygundersen.com)",
-      "Skill(gstack)"
+      "Skill(gstack)",
+      "WebFetch(domain:htimmermann.github.io)",
+      "Bash(gh run *)",
+      "Bash(gh api *)",
+      "Bash(python3 -c \"import sys,json; builds=json.load\\(sys.stdin\\); [print\\(f'{b[\\\\\"status\\\\\"]} - {b[\\\\\"created_at\\\\\"]} - error: {b.get\\(\\\\\"error\\\\\",{}\\).get\\(\\\\\"message\\\\\",\\\\\"none\\\\\"\\)}'\\) for b in builds[:5]]\")",
+      "Bash(python3 -c ' *)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
