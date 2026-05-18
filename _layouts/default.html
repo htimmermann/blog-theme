@@ -8,9 +8,9 @@
     <meta name='keywords' content='{{ page.keywords }}'>
     <meta name='author' content='Henry Fortes Timmermann'>
 
-    <link href='{{ site.baseurl }}/css/blog.css' rel='stylesheet'/>
-    <link href='{{ site.baseurl }}/css/trac.css' rel='stylesheet'/>
-    <link href='{{ site.baseurl }}/css/markdown.css' rel='stylesheet'/>
+    <link href='{{ site.baseurl }}/css/blog.css?v={{ site.time | date: '%s' }}' rel='stylesheet'/>
+    <link href='{{ site.baseurl }}/css/trac.css?v={{ site.time | date: '%s' }}' rel='stylesheet'/>
+    <link href='{{ site.baseurl }}/css/markdown.css?v={{ site.time | date: '%s' }}' rel='stylesheet'/>
 
     {% include mathjax.html %}
 </head>
