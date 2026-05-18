@@ -41,3 +41,36 @@ h1 {
 	margin: 0;
 	padding-top: 5px;
 }
+#papers {
+	max-width: 700px;
+	margin: 80px auto;
+}
+#papers p.back {
+	margin: 0 0 35px 0;
+}
+#papers p.back a {
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 13px;
+	text-decoration: none;
+}
+#papers h1 {
+	margin: 0 0 30px 0;
+}
+.publication {
+	margin-bottom: 35px;
+}
+.publication p {
+	margin: 0;
+	line-height: 1.5em;
+}
+.publication p.pub-title {
+	font-weight: bold;
+}
+.publication p.pub-authors,
+.publication p.pub-venue {
+	font-style: italic;
+}
+.publication p.pub-links {
+	margin: 7px 0 0 0;
+	font-size: 14px;
+}
