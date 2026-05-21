@@ -67,7 +67,7 @@ h1 {
 	font-weight: bold;
 }
 .publication p.pub-venue {
-	font-style: normal;
+	font-style: italic;
 }
 .publication p.pub-links {
 	margin: 7px 0 0 0;
